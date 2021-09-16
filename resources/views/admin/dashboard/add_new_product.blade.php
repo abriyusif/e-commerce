@@ -12,6 +12,8 @@
     <div class="row">
       <div class="col-md-12 col-sm-12 col-lg-12">
         <div class="tile">
+
+        <!-- code to add new products to website -->
           <h3 class="tile-title">Enter Product Details Below Here</h3>
           <div class="tile-body">
             <form method="POST" id="formProduct">
@@ -19,21 +21,29 @@
 
               </div>
               <div class="row">
-               <div class="col-md-4 col-sm-4 col-lg-4">
+              <div class="col-md-6 col-sm-6 col-lg-6">
+                <div class="form-group">
+
+                <!-- adding new product form -->
+                  <label class="control-label">Product Name</label>
+                  <input class="form-control" id="product_name"  name="product_name" type="text">
+
+              </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-6">
                 <div class="form-group">
                   <label class="control-label">Product Code</label>
                 <input type="text" name="product_code" id="product_code" class="form-control input-lg">
                 </div>
                </div>
+              </div>
+              <div class="row">
                <div class="col-md-4 col-sm-4 col-lg-4">
                 <div class="form-group">
                   <label class="control-label">Category</label>
                   <select name="product_category" id="product_category" class="form-control input-lg">
 								<option value="" disabled selected>.......</option>
-                                <option value="New">New</option>
-                                <option value="Electronics">Electronics</option>
-                                <option value="Household">Household</option>
-                                <option value="Others">Others</option>
+                               
 								</select>
                 </div>
                </div>
@@ -42,31 +52,31 @@
                   <label class="control-label">Brand</label>
                   <select name="product_brand" id="product_brand" class="form-control input-lg">
 								<option value="" disabled selected>--------</option>
-                                <option value="Brand1">Brand1</option>
-                                <option value="Brand2">Brand2</option>
-                                <option value="Brand3">Brand3</option>
-                                <option value="Brand4">Brand4</option>
+                                
+								</select>
+                </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-lg-4">
+                <div class="form-group">
+                  <label class="control-label">Sub Category</label>
+                  <select name="sub_category" id="sub_category" class="form-control input-lg">
+								<option value="" disabled selected>--------</option>
+                                
 								</select>
                 </div>
                </div>
               </div>
             
             <div class="row">
-              <div class="col-md-4 col-sm-4 col-lg-4">
-                <div class="form-group">
-                  <label class="control-label">Product Name</label>
-                  <input class="form-control" id="product_name"  name="product_name" type="text">
-
-              </div>
-              </div>
-              <div class="col-md-4 col-sm-4 col-lg-4">
+              
+              <div class="col-md-6 col-sm-6 col-lg-6">
                 <div class="form-group">
                   <label class="control-label">Product Description</label>
-                  <textarea class="input-lg form-control w3-card-4" cols="80" id="Product_title" name="product_description" style="min-width:80%;">
+                  <textarea class="input-lg form-control w3-card-6" cols="80" id="Product_title" name="product_description" style="min-width:80%;">
                </textarea> 
                 </div>
               </div>
-              <div class="col-sm-4 col-sm-4 col-lg-4">
+              <div class="col-sm-6 col-sm-6 col-lg-6">
                 <div class="form-group">
                   <label class="control-label">Purchase Price</label>
                   <input type="number" name="purchase_price" id="purchase-price" class="input-lg form-control w3-card-4">

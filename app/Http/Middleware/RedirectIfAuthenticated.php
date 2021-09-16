@@ -25,6 +25,11 @@ class RedirectIfAuthenticated
                 return redirect('/admin');
             }
         break;
+        case 'normal' :
+            if (Auth::guard($guard)->check()) {
+                return redirect('/normal');
+            }
+        break;
         default:
         if(Auth::guard($guard)->check())
         {
